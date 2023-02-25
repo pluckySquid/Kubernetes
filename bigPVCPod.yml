@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: big-pod
+spec:
+  containers:
+  - name: mypod
+    image: plucksquid/myubuntu_image1:v1-release
+    command: ["sh", "-c", "sleep infinity"]
+    resources:
+      limits:
+        memory: 32Gi
+        cpu: 16
+      requests:
+        memory: 32Gi
+        cpu: 16
+    volumeMounts:
+    - mountPath: /yunshuvol
+      name: yunshuvol
+  volumes:
+    - name: yunshuvol
+      persistentVolumeClaim:
+        claimName: yunshu-bigvol
