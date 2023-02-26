@@ -22,8 +22,6 @@ docker exec -it <opeful_banach> /bin/sh
 
 ### Push to dockerhub
   ```
-docker run --name mynginxdefault -p 80:80 -d nginx
-
 docker build -t plucksquid/myubuntu_image1:v1 .
 
 docker run --name myubuntu22.04 -p 80:80 -d plucksquid/myubuntu_image1:v1
@@ -41,5 +39,6 @@ docker push plucksquid/myubuntu_image1:v1-release
 # remove a contaner
   ```
   docker ps -a
+  docker rm -f <mynginxdefault>
   
   ```
