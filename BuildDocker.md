@@ -15,8 +15,10 @@ docker ps
 
 ### login to the container
   ```
-docker exec -it <opeful_banach> /bin/sh   //change <openful_banch> to the name list on docer ps command
+docker exec -it <opeful_banach> /bin/sh 
   ```
+# change <openful_banch> to the name list on docer ps command
+
 
 ### Push to dockerhub
   ```
