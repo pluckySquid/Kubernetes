@@ -2,14 +2,14 @@
   ```
   docker login
     username: plucksquid
-  docker pull plucksquid/myubuntu_image1:v1-release
+  docker pull plucksquid/myubuntu_image2:v1-release
   ```
   
 ### run container on the VM: 
   ```
    docker stop <container name>
    docker rm <container name>
-   docker container run -d -it --name yunshucontainer plucksquid/myubuntu_image1:v1-release
+   docker container run -d -it --name yunshucontainer plucksquid/myubuntu_image2:v1-release
   ```
 
 ### run pods to mount on bigpvc:
