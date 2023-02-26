@@ -17,7 +17,7 @@ docker ps
   ```
 docker exec -it <opeful_banach> /bin/sh 
   ```
-# change <openful_banch> to the name list on docer ps command
+//change <openful_banch> to the name list on docer ps command
 
 
 ### Push to dockerhub
