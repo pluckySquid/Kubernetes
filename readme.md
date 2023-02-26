@@ -7,7 +7,9 @@
    docker container run -d -it --name yunshucontainer plucksquid/myubuntu_image1:v1-release
 
 ### run pods to mount on bigpvc:
+  kubectl delete -f bigPVCPod.yml
   kubectl create -f bigPVCPod.yml
+  kubectl get pods
 
 
 ### login to the pod: 
