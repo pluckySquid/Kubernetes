@@ -22,18 +22,18 @@ docker exec -it <opeful_banach> /bin/sh
 
 ### Push to dockerhub
   ```
-docker build -t plucksquid/myubuntu_image2:v1 .
+docker build -t plucksquid/myubuntu_image3:v1 .
 
-docker run --name myubuntu22.04 -p 80:80 -d plucksquid/myubuntu_image2:v1
+docker run --name myubuntu22.04 -p 80:80 -d plucksquid/myubuntu_image3:v1
 
 #check existing images
 docker images
 
-docker tag plucksquid/myubuntu_image2:v1 plucksquid/myubuntu_image2:v1-release
+docker tag plucksquid/myubuntu_image3:v1 plucksquid/myubuntu_image3:v1-release
 
 
 (docker login)
-docker push plucksquid/myubuntu_image2:v1-release
+docker push plucksquid/myubuntu_image3:v1-release
   ```
 
 # remove a contaner
