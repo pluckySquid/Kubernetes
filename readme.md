@@ -8,3 +8,7 @@
 
 ### run pods to mount on bigpvc:
   kubectl create -f bigPVCPod.yml
+
+
+### login to the pod: 
+    kubectl exec -it big-pod -- /bin/bash
