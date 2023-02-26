@@ -33,7 +33,7 @@ docker tag plucksquid/myubuntu_image2:v1 plucksquid/myubuntu_image2:v1-release
 
 
 (docker login)
-docker push plucksquid/myubuntu_image21:v1-release
+docker push plucksquid/myubuntu_image2:v1-release
   ```
 
 # remove a contaner
