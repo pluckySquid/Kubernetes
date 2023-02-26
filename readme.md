@@ -1,8 +1,10 @@
 ### download image from dockerhub:
+  ```
   docker login
     username: plucksquid
   docker pull plucksquid/myubuntu_image1:v1-release
-
+  ```
+  
 ### run container on the VM: 
   ```
    docker stop <container name>
