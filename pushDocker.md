@@ -10,7 +10,7 @@ docker run -d -p 80:80 docker/getting-started
   
 #check if docker is runing 
   ```
-docker ps
+docker ps -a
   ```
 
 ### login to the container
