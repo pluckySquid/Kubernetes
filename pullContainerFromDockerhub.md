@@ -39,4 +39,6 @@ docker rm yunshucontainer
   
   
 ### Remove image
+```
 docker image rm <plucksquid/myubuntu_image3:v1-release>
+```
