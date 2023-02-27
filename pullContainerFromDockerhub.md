@@ -40,5 +40,13 @@ docker rm yunshucontainer
   
 ### Remove image
 ```
+docker images
+```
+user@yunshu:~/Nautilas$ docker images
+REPOSITORY                       TAG          IMAGE ID       CREATED         SIZE
+plucksquid/myubuntu_image3       v1-release   0b5930a8ca9a   22 hours ago    1.02GB
+getting-started                  latest       6678fe65a79a   11 days ago     262MB
+
+```
 docker image rm <plucksquid/myubuntu_image3:v1-release>
 ```
