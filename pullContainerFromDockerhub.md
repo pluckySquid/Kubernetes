@@ -26,3 +26,8 @@
   ```
    kubectl exec -it big-pod -- /bin/bash
   ```
+
+### rm all container
+  ```
+docker image prune -a
+  ```
