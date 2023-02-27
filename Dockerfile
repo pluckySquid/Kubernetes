@@ -18,7 +18,7 @@ RUN apt-get update && \
 RUN apt-get update && \
     apt-get install ca-certificates-java && \
     apt-get clean && \
-    update-ca-certificates -f;
+    update-ca-certificates -f; 
 
 
     
@@ -30,25 +30,29 @@ RUN apt-get update && \
     apt-get install -y openssh-client && \ 
     apt-get install -y git;
     
-#mkdir folder
-Run mkdir ~/nextflow && \
-    mkdir ~/QCXMS
+# mkdir folder
+RUN mkdir -p /usr/sugar && \
+    mkdir -p /usr/sugar/nextflow && \
+    mkdir -p /usr/sugar/QCXMS;
+    
    
 
 # install nextflow
-Run cd ~/nextflow && \
+RUN cd /usr/sugar/nextflow && \
     wget -qO- https://get.nextflow.io | bash && \
+    chmod +x nextflow && \
+    scp nextflow /bin/ && \
+    cd /bin/ && \
     chmod +x nextflow;
 
 # install qcxms
-Run cd ~/QCXMS && \
+RUN cd /usr/sugar/QCXMS && \
     wget http://github.com/qcxms/QCxMS/releases/download/v.5.2.1/QCxMS.v.5.2.1.tar.xz && \
     tar -xvf QCxMS.v.5.2.1.tar.xz && \
-    mkdir $HOME/bin && \
-    scp qcxms $HOME/bin/ && \
-    scp pqcxms $HOME/bin/ && \
-    scp q-batch $HOME/bin/ && \
-    scp getres $HOME/bin/ && \
-    scp -r .XTBPARAM $HOME/;
+    scp qcxms /bin/ && \
+    scp pqcxms /bin/ && \
+    scp q-batch /bin/ && \
+    scp getres /bin/ && \
+    scp -r .XTBPARAM /;
 
 USER apprunner
