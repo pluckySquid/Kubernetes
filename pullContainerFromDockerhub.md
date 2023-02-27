@@ -11,7 +11,10 @@
 
 ### run container on the VM: 
 ```
-   docker container run -d -it --name yunshucontainer plucksquid/myubuntu_image3:v1-release
+   docker container run -d -it --name yunshucontainer plucksquid/myubuntu_image3:v1-release 
+   or
+   docker run --name yunshucontainer -i -t plucksquid/myubuntu_image3:v1-release
+
 ```
 
 ### run pods to mount on bigpvc:
