@@ -39,6 +39,6 @@ docker push plucksquid/myubuntu_image3:v1-release
 # remove a contaner
   ```
   docker ps -a
-  docker rm -f <mynginxdefault>
+  docker rm -f myubuntu22.04
   
   ```
