@@ -27,7 +27,7 @@
    kubectl exec -it big-pod -- /bin/bash
   ```
 
-### rm all container
+# rm all container
   ```
 docker image prune -a
 
@@ -38,7 +38,7 @@ docker rm yunshucontainer
   ```
   
   
-### Remove image
+# Remove image
 ```
 docker images
 ```
