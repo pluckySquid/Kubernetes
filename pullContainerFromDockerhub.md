@@ -30,4 +30,9 @@
 ### rm all container
   ```
 docker image prune -a
+
+docker ps -a
+docker stop yunshucontainer
+docker rm yunshucontainer
+
   ```
