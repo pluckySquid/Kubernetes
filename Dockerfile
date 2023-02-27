@@ -27,6 +27,7 @@ RUN apt-get update && \
     apt-get install -y nano && \
     apt-get install -y wget && \
     apt-get install xz-utils && \ 
+    apt-get install sudo && \ 
     apt-get install -y openssh-client && \ 
     apt-get install -y git;
     
@@ -41,9 +42,7 @@ RUN mkdir -p /usr/sugar && \
 RUN cd /usr/sugar/nextflow && \
     wget -qO- https://get.nextflow.io | bash && \
     chmod +x nextflow && \
-    scp nextflow /bin/ && \
-    cd /bin/ && \
-    chmod +x nextflow;
+    scp nextflow /bin/;
 
 # install qcxms
 RUN cd /usr/sugar/QCXMS && \
@@ -55,4 +54,4 @@ RUN cd /usr/sugar/QCXMS && \
     scp getres /bin/ && \
     scp -r .XTBPARAM /;
 
-USER apprunner
+USER root
