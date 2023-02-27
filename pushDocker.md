@@ -16,7 +16,7 @@ docker ps -a
 ### login to the container
   ```
 docker exec -it <opeful_banach> /bin/sh 
-docker run -i -t plucksquid/myubuntu_image3:v1-release
+docker run --name myubuntu22.04 -i -t plucksquid/myubuntu_image3:v1
   ```
 //change <openful_banch> to the name list on docer ps command
 
