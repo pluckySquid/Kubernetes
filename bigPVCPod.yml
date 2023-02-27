@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: mypod
-    image: plucksquid/myubuntu_image1:v1-release
+    image: plucksquid/myubuntu_image3:v1-release
     command: ["sh", "-c", "sleep infinity"]
     resources:
       limits:
